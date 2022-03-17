@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>GTolk</title>
+    <style>
+        html, body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 95%;
+            vertical-align: central;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: Calibri, Arial;
+            font-size: 12px;
+            background: #F5F5F5;
+            /*width: calc(100% - 10px);*/
+            width: 100%;
+        }
+
+        /*
+        p {
+
+            margin: 0px;
+            padding: 0px;
+        }
+        */
+
+
+        .BoxContainer {
+            position: relative;
+            /*display: inline-table;*/
+            /*box-sizing: border-box;*/
+            /*width: calc(100%-150px);*/
+            width: 100%;
+        }
+
+        .BoxDeCabeçalho {
+            /*clear: left;*/
+            /*position: fixed;*/
+            /*display: inline-table;*/
+            /*box-sizing: border-box;*/
+            width: 100%;
+        }
+
+        .BoxDeHistorico {
+            /*clear: left;*/
+            /*position: fixed;*/
+            /*display: inline-table;*/
+            /*box-sizing: border-box;*/
+            width: 100%;
+            color: rgb(75, 75, 75);
+        }
+
+        .BoxDeMensagens {
+            /*clear: left;*/
+            /*position: fixed;*/
+            /*display: inline-table;*/
+            /*box-sizing: border-box;*/
+            width: 100%;
+        }
+
+        .BoxDeRodapé {
+            /*clear: left;*/
+            /*position: fixed;*/
+            /*display: inline-table;*/
+            /*box-sizing: border-box;*/
+            width: 100%;
+        }
+
+        .TextoDeCabeçalho {
+            border: 2px solid;
+            border-color: #DCDCDC;
+            background: #DCDCDC;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(75, 75, 75);
+        }
+
+        .TextoDeRodapé {
+            border: 2px solid;
+            border-color: #DCDCDC;
+            background: #DCDCDC;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(75, 75, 75);
+        }
+
+        .TítuloDoRemetente {
+            border: 2px solid;
+            border-color: #D7E4F2;
+            background: #D7E4F2;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 5px 5px 0px 0px;
+            text-align: right;
+            font-size: 14px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .MensagemDoRemetente {
+            overflow: auto;
+            border: 2px solid;
+            border-color: #D7E4F2;
+            background: #D7E4F2;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 0px 0px 0px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .RodapeDoRemetente {
+            overflow: auto;
+            border: 2px solid;
+            border-color: #D7E4F2;
+            background: #D7E4F2;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 0px 0px 5px 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: right;
+            color: rgb(75, 75, 75);
+        }
+
+
+        .TítuloDoDestinatário {
+            border: 2px solid;
+            border-color: #B0C4DE;
+            background: #B0C4DE;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 5px;
+            border-radius: 5px 5px 0px 0px;
+            font-size: 14px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .MensagemDoDestinatário {
+            overflow: auto;
+            border: 2px solid;
+            border-color: #B0C4DE;
+            background: #B0C4DE;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 0px 0px 0px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .RodapeDoDestinatário {
+            /*clear: left ;*/
+            overflow: auto;
+            border: 2px solid;
+            border-color: #B0C4DE;
+            background: #B0C4DE;
+            margin: 0px 5px 0px 5px;
+            padding: 0px 5px 0px 10px;
+            border-radius: 0px 0px 5px 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: right;
+            color: rgb(75, 75, 75);
+        }
+
+        /*
+        .ColunaDeData {
+            float: right;
+            margin: 0px 10px 0px 0px;
+            font-size: 8px;
+        }
+
+        .ColunaDeMensagem {
+            
+        }
+        */
+    </style>
+
+</head>
+<body width='90%'>
+
+    <div id="IdContainer" class="BoxContainer">
+        <br />
+
+        <div id="IdMensagensHistoricas" class="BoxDeHistorico"></div>
+        
+        <!--<div id="IdCabeçalho" class="BoxDeCabeçalho"></div>-->
+
+        <div id="IdMensagens" class="BoxDeMensagens"></div>
+        <!--<br />-->
+        <!--<div id="IdRodapé" class="BoxDeRodapé"></div>-->
+        <br />
+        <div id="IdScroll" />
+    </div>
+</body>
+</html>
